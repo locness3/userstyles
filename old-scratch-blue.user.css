@@ -7,10 +7,13 @@
 ==/UserStyle== */
 
 @-moz-document domain("scratch.mit.edu") {
-    #navigation, .title-banner.mod-messages, .dropdown, .dropdown.with-arrow:before {
+    #navigation, .title-banner.mod-messages, .title-banner.mod-blue-bg, .dropdown, .dropdown.with-arrow:before, .button, .ttt-tile-tag {
     background-color: #0f8bc0;;
 }
-a:link {
+.button.white.mod-ttt-item {
+       border-color: #0f8bc0; 
+}
+a:link, .button.white {
     color: #0f8bc0;
 }
 
