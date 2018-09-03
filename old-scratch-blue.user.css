@@ -13,7 +13,7 @@
 .button.white.mod-ttt-item {
        border-color: #0f8bc0; 
 }
-a:link, .button.white {
+a, .button.white {
     color: #0f8bc0;
 }
 
