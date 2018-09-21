@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           WP Calypso Sidebar collapse (WIP)
 @namespace      github.com/openstyles/stylus
-@version        0.1.0
+@version        0.1.1
 @description    Collapse the WP Calypso Sidebar and make the content wider. Based off https://userstyles.org/styles/110649/wide-stats-for-new-wordpress-com-stats
 @author         Locness
 ==/UserStyle== */
@@ -17,7 +17,7 @@
     transition: transform 0.15s ease-in-out, opacity 0.15s ease-out, -webkit-transform 0.15s ease-in-out, width 0.25s cubic-bezier(.79,.14,.15,.86) !important;
   }
   
-  .sidebar__heading,.menu-link-text,.sidebar-banner,.site__info,.current-site__switch-sites {
+  .sidebar__heading,.menu-link-text,.sidebar-banner,.current-site__switch-sites {
        display: none;
   }
 
