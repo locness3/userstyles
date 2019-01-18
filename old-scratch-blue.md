@@ -1,1 +1,1 @@
-**MOVED TO [HERE](csourcesc.github.io/old-scratch-blue)**
+**MOVED TO [HERE](https://csourcesc.github.io/old-scratch-blue)**
