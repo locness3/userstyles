@@ -7,6 +7,14 @@ First install a userstyle manager :
 
 These extensions are the best for me, but you can use any userstyle manager.
 
+## With the repo
+
 Then go to the style that you want and click Raw.  
 ![Illustration for Raw button](https://raw.githubusercontent.com/locness3/images-host/master/Screenshot_2018-08-02%20locness3%20userstyles.png)
 Then, click "Install style" (or similar depending of your userstyle manager).
+
+
+## With userstyles.org
+
+Find the styles [here](https://userstyles.org/users/758962) (they may be outdated).  
+Select one then click "Install Style" to install it.
