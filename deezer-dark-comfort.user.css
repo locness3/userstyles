@@ -1,0 +1,406 @@
+/* ==UserStyle==
+@name           Deezer dark comfort
+@namespace      locness3.github.io
+@version        0.2.0
+@description    Dark theme for Deezer
+@author         Locness
+==/UserStyle== */
+
+@-moz-document domain("deezer.com") {
+  
+  /* Variables */
+  
+  :root {
+    --bg-color: #212431;
+    --border-color: #3a3e4f;
+    --depth-color: #191b25;
+    --text-color: #eee;
+    --secondary-color: #ffffffbf;
+  }
+  
+  /* Global */
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  /* Sidebar */
+  
+  .page-sidebar {
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+  }
+  
+  .logo {
+	  background-image: url("https://e-cdns-files.dzcdn.net/cache/slash/images/common/logos/deezer_white.d183117d35d9c9e3717604422ac09c95.png");
+	  height: 24px;
+	  width: 117px;
+  }
+  
+  .page-sidebar .sidebar-nav-link:hover {
+    background-color: var(--depth-color);
+  }
+  
+  .page-sidebar .sidebar-nav-link {
+    color: var(--text-color);
+  }
+  
+  /* Topbar */
+  
+  .page-topbar {
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+  }
+  
+  .page-topbar .topbar-search-input, .page-topbar .topbar-search-input::placeholder, .page-topbar .topbar-search-submit {
+    color: var(--text-color);
+  }
+  
+  .page-topbar .topbar-search-input {
+    background-color: var(--depth-color);
+    border-color: var(--depth-color);
+  }
+  
+  .page-topbar .topbar-search-input:hover, .page-topbar .topbar-search-input:focus {
+    background-color: var(--bg-color);
+    box-shadow: 0 1px 12px 0 rgba(0, 0, 0, .4);
+  }
+  
+  .page-topbar .topbar-search-input:hover {
+
+    border-color: var(--border-color);
+  }
+  
+  .page-topbar .topbar-search-input:focus {
+    border-color: #007feb;
+  }
+  
+  
+  .page-topbar .topbar-search-clear {
+    color: var(--secondary-color);
+  }
+  
+  /* Player */
+  
+  .page-player .player-bottom {
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+    color: var(--text-color);
+  }
+  
+  .page-player .popper-player-preview .preview-heading, .page-player .popper-player-preview .preview-link {
+    color: var(--text-color);
+  }
+  
+  .page-player .player-track .track-heading {
+    color: var(--text-color);
+  }
+  
+  .slider-track-default {
+    background-color: var(--border-color);
+  }
+  
+  .slider-track-active {
+    background-color: var(--text-color);
+  }
+  
+  .page-player .player-options .option-item + .option-item::before {
+    background-color: var(--border-color);
+  }
+  
+  .page-player .player-options .queuelist.is-available:hover {
+    background-color: var(--border-color);
+  }
+  
+  .page-player .player-options .queuelist.is-active {
+    background-color: var(--depth-color);
+  }
+  
+  .page-player .player-options .queuelist-label {
+    color: var(--text-color);
+  }
+  
+  .page-player .popper-player-settings .setting-label {
+    color: var(--text-color);
+  }
+  
+  .page-player .popper-player-settings .setting-info {
+    color: var(--secondary-color);
+  }
+  
+  /* Player windows (lyrics, queue...) */
+  
+  .page-player .player-full {
+    background-color: var(--bg-color);
+  }
+  
+  .page-player .player-full .player-heading {
+    color: var(--text-color);
+  }
+  
+  .page-player .queuelist-cover-title {
+    color: var(--text-color);
+  }
+  
+  .page-player .queuelist-cover-subtitle {
+    color: var(--secondary-color);
+  }
+  
+  .page-player .queuelist-header {
+    border-color: var(--border-color);
+  }
+  
+  .page-player .queuelist-title {
+    color: var(--text-color);
+  }
+  
+  .page-player .lyrics-spinner {
+    color: var(--text-color);
+  }
+  
+  .page-player .lyrics-line {
+    color: var(--secondary-color);
+  }
+  
+  .page-player .lyrics-synchro .lyrics-line:hover, .page-player .lyrics-line.is-oneline:hover {
+    background-color: var(--border-color);
+  }
+  
+  .page-player .lyrics-line.is-active {
+    color: var(--text-color);
+  }
+  
+  .page-player .lyrics-line.is-oneline {
+    color: var(--text-color);
+  }
+  
+  .page-player .lyrics-gradient.is-top {
+    background-image: linear-gradient(0deg,hsla(0,0%,100%,0),#212431) !important;
+  }
+  
+  .page-player .lyrics-gradient.is-bottom {
+    background-image: linear-gradient(0deg,#212431,hsla(0,0%,100%,0));
+  }
+  
+  /* Headings and Sub-Headings */
+  
+  [class^="heading-"], [class^="heading-"] a, [class^="heading-"] a:hover, .catalog-header .header-info .heading-link, .header-title {
+    color: var(--text-color);
+  }
+  
+  .heading-1-sub, .heading-2-sub, .heading-3-sub, .heading-4-sub, .heading-5-sub {
+    color: var(--secondary-color);
+  }
+  
+  /* Navbars */
+  
+  .navbar {
+    background-color: var(--bg-color);
+  }
+  
+  .navbar-item {
+    color: var(--secondary-color);
+  }
+  
+  .navbar-link:hover, .navbar-item.active .navbar-link {
+    color: var(--text-color);
+  }
+  
+  /* Poppers */
+  
+  .popper-content {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  .page-topbar .popper-search .search-heading, .page-topbar .popper-search .search-history-link {
+    color: var(--text-color);
+  }
+  
+  .page-topbar .popper-search .search-history-link:hover {
+    background-color: var(--depth-color);
+  }
+  
+  .page-topbar .popper-search .nano-card-item {
+    background-color: inherit;
+  }
+  
+  .page-topbar .popper-search .nano-card-item:hover {
+    background-color: var(--depth-color);
+  }
+  
+  .page-topbar .popper-account .account-link {
+    color: var(--secondary-color);
+  }
+  
+  .page-topbar .popper-account .account-link.is-main, .page-topbar .popper-account .account-heading {
+    color: var(--text-color) !important;
+  }
+  
+  .page-topbar .popper-account .account-menu, .page-topbar .popper-account .account-item.is-divider {
+    border-color: var(--border-color);
+  }
+  
+  .popover {
+    background-color: var(--bg-color);
+    border-color: var(--border-color)
+  }
+  
+  .popover .popover-header {
+    border-color: var(--border-color);
+  }
+  
+  .page-contextmenu .menu-item, .page-contextmenu .menu-item:hover {
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+  }
+  
+  .page-contextmenu .menu-item:hover {
+    background-color: var(--border-color);
+  }
+  
+  .page-contextmenu .menu-item:hover > .icon {
+    color: var(--secondary-color);
+  }
+  
+  .page-contextmenu .menu-item.link {
+    background-color: var(--border-color);
+  }
+  
+  .page-contextmenu .menu-item.link:hover {
+    background-color: var(--depth-color);
+  }
+  
+  /* Buttons */
+  
+  .carousel-control {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-color: var(--border-color);
+  }
+  
+  .carousel-control:hover:not(.disabled) {
+    background-color: var(--bg-color);
+  }
+  
+  .create-assistant-container:hover {
+    background-color: var(--depth-color);
+  }
+  
+  .c0110 {
+    background-color: var(--depth-color);
+    color: var(--text-color);
+    border-color: var(--border-color);
+  }
+  
+  .c0110:not(.c0124):hover, .c0110:not(.c0124).c0123 {
+    background-color: var(--bg-color);
+  }
+  
+  .c0110:not(.c0124):active {
+    background-color: var(--depth-color);
+  }
+  
+  .slide:not(.is-bg-full-img) .slide-btn {
+    border-color: var(--text-color);
+    color: var(--text-color);
+  }
+  
+  .slide:not(.is-bg-full-img) .slide-btn:hover {
+    background-color: var(--text-color);
+    color: #32323d;
+    border-color: var(--text-color);
+  }
+  
+  .btn-view-more {
+    background-color: var(--border-color);
+  }
+  
+  .btn-view-more:hover {
+    background-color: var(--depth-color);
+  }
+  
+  .btn-view-more .label, .btn-view-more::after {
+    color: var(--secondary-color);
+  }
+  
+  .svg-icon-group-btn {
+    color: var(--text-color);
+  }
+  
+  .svg-icon-group-btn:hover, .svg-icon-group-btn.is-active {
+    background-color: var(--border-color);
+  }
+  
+  /* Text inputs */
+  
+  .form-control {
+    background-color: var(--bg-color);
+    border-color: var(--border-color) !important;
+  }
+  
+  /* Channels/Home slides */
+  
+  .slide:not(.is-bg-full-img), .slide-cut {
+    color: var(--text-color);
+  }
+  
+  .slide.slide-cut {
+    border-color: var(--border-color);
+  }
+  
+  .slide-cut .slide-background {
+    background-color: var(--bg-color) !important;
+  }
+  
+  .flow-logo-svg path {
+    fill: var(--secondary-color);
+  }
+  
+  .slide.slide-cut .slide-covers::after {
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+  }
+  
+  .slide:not(.is-bg-full-img) .slide-text .subtitle, .slide:not(.is-bg-full-img) .slide-text .subtitle .link {
+    color: var(--secondary-color);
+  }
+  
+  /* Track listings */
+  
+  .datagrid {
+    background-color: var(--bg-color);
+  }
+  
+  .datagrid-header .datagrid-row {
+    background-color: var(--bg-color);
+  }
+  
+  .datagrid-label-main {
+    color: var(--text-color);
+  }
+  
+  .datagrid-header .datagrid-row::after, .datagrid-header .datagrid-row::before, .datagrid-row::after, .datagrid-row::before {
+    background-color: var(--border-color);
+  }
+  
+  .datagrid-row.has-contextmenu, .datagrid-row:hover {
+    background-color: var(--border-color);
+  }
+  
+  /* Profile */
+  
+  #page_profile {
+    background-color: var(--bg-color);
+  }
+  
+  #page_profile .profile-header .header-main .header-subtitle .subtitle-elem {
+    color: var(--secondary-color);
+  }
+  
+  #page_profile .profile-header .header-main .header-subtitle .subtitle-elem .subtitle-elem-number {
+    color: var(--text-color);
+  }
+  
+}
