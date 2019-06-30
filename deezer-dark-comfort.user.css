@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Deezer dark comfort
 @namespace      locness3.github.io
-@version        0.2.0
+@version        0.2.1
 @description    Dark theme for Deezer
 @author         Locness
 ==/UserStyle== */
@@ -32,7 +32,7 @@
     border-color: var(--border-color);
   }
   
-  .logo {
+  .page-sidebar .logo {
 	  background-image: url("https://e-cdns-files.dzcdn.net/cache/slash/images/common/logos/deezer_white.d183117d35d9c9e3717604422ac09c95.png");
 	  height: 24px;
 	  width: 117px;
