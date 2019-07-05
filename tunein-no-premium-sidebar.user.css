@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name           TuneIn no Premium sidebar
+@namespace      locness3.github.io
+@version        1.0.0
+@description    Hides the right sidebar incitiing to go Premium on TuneIn.
+@author         Locness
+==/UserStyle== */
+
+@-moz-document domain("tunein.com") {
+  .app__app___3d5HQ .app__rightSideOpen___llcP4 {
+    padding-right: 0;
+  }
+
+  .right-side__wrapper___3Runf {
+    display: none;
+  }
+}
