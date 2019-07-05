@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Deezer dark comfort
 @namespace      locness3.github.io
-@version        0.2.1
+@version        0.2.2
 @description    Dark theme for Deezer
 @author         Locness
 ==/UserStyle== */
@@ -197,6 +197,7 @@
   
   .navbar {
     background-color: var(--bg-color);
+    border-color: var(--border-color);
   }
   
   .navbar-item {
@@ -333,6 +334,11 @@
     background-color: var(--border-color);
   }
   
+  .thumbnail .action-item-btn {
+    background-color: var(--bg-color);
+    color: white;
+  }
+  
   /* Text inputs */
   
   .form-control {
@@ -393,6 +399,15 @@
   
   #page_profile {
     background-color: var(--bg-color);
+  }
+  
+  #page_profile .profile-header-container {
+    border-color: transparent;
+    border-bottom-color: var(--border-color);
+  }
+  
+  #page_profile .profile-header-container .navbar {
+    border-bottom-color: transparent;
   }
   
   #page_profile .profile-header .header-main .header-subtitle .subtitle-elem {
