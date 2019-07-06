@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Deezer dark comfort
-@namespace      github.com/locness3/userstyles
-@version        0.2.2
+@namespace      locness3.github.io
+@version        0.2.3
 @description    Dark theme for Deezer
 @author         Locness
 ==/UserStyle== */
@@ -14,6 +14,7 @@
     --bg-color: #212431;
     --border-color: #3a3e4f;
     --depth-color: #191b25;
+    --shadow-color: #0e1016;
     --text-color: #eee;
     --secondary-color: #ffffffbf;
   }
@@ -186,7 +187,7 @@
   /* Headings and Sub-Headings */
   
   [class^="heading-"], [class^="heading-"] a, [class^="heading-"] a:hover, .catalog-header .header-info .heading-link, .header-title {
-    color: var(--text-color);
+    color: var(--text-color) !important;
   }
   
   .heading-1-sub, .heading-2-sub, .heading-3-sub, .heading-4-sub, .heading-5-sub {
@@ -416,6 +417,20 @@
   
   #page_profile .profile-header .header-main .header-subtitle .subtitle-elem .subtitle-elem-number {
     color: var(--text-color);
+  }
+  
+  /* Search results */
+  
+  .page-naboo-search .suggest-column .nano-card-item, .page-naboo-search .suggest-column .nano-card-item:hover {
+    background-color: var(--bg-color);
+  }
+  
+  .page-naboo-search .suggest-column .nano-card-item {
+    box-shadow: 0 1px 7px var(--shadow-color);
+  }
+  
+  .page-naboo-search .suggest-column .nano-card-item:hover {
+    box-shadow: 0 3px 7px var(--shadow-color);
   }
   
 }
