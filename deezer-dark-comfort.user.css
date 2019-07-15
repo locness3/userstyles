@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Deezer dark comfort
 @namespace      github.com/locness3/userstyles
-@version        0.2.2
+@version        0.2.3
 @description    Dark theme for Deezer
 @author         Locness
 ==/UserStyle== */
@@ -33,7 +33,7 @@
     border-color: var(--border-color);
   }
   
-  .page-sidebar .logo {
+  .logo-deezer-black {
 	  background-image: url("https://e-cdns-files.dzcdn.net/cache/slash/images/common/logos/deezer_white.d183117d35d9c9e3717604422ac09c95.png");
 	  height: 24px;
 	  width: 117px;
@@ -417,6 +417,10 @@
   
   #page_profile .profile-header .header-main .header-subtitle .subtitle-elem .subtitle-elem-number {
     color: var(--text-color);
+  }
+  
+  #page_profile .placeholders-container .placeholders-title {
+    color: var(--heading-color);
   }
   
   /* Search results */
