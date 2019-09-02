@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Deezer dark comfort
 @namespace      github.com/locness3/userstyles
-@version        0.2.4
+@version        0.2.5
 @description    Dark theme for Deezer
 @author         Locness
 ==/UserStyle== */
@@ -354,11 +354,11 @@
     color: var(--text-color);
   }
   
-  .slide.slide-cut {
+  .slide {
     border-color: var(--border-color);
   }
   
-  .slide-cut .slide-background {
+  .slide .slide-background {
     background-color: var(--bg-color) !important;
   }
   
