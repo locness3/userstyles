@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Deezer dark comfort
 @namespace      github.com/locness3/userstyles
-@version        0.2.5
+@version        0.3.0
 @description    Dark theme for Deezer
 @author         Locness
 ==/UserStyle== */
@@ -17,6 +17,17 @@
     --shadow-color: #0e1016;
     --text-color: #eee;
     --secondary-color: #ffffffbf;
+    
+    --main-background-color: var(--bg-color);
+    --default-background-color: var(--bg-color);
+    --sidebar-background-color: var(--bg-color);
+    --default-border-color: var(--border-color);
+    --main-border-color: var(--border-color);
+    --sidebar-border-color: var(--border-color);
+    --slide-border-color: var(--border-color);
+    --default-text-color: var(--text-color);
+    --main-text-color: var(--text-color);
+    --secondary-text-color: var(--secondary-color)
   }
   
   /* Global */
@@ -27,11 +38,6 @@
   }
   
   /* Sidebar */
-  
-  .page-sidebar {
-    background-color: var(--bg-color);
-    border-color: var(--border-color);
-  }
   
   .logo-deezer-black {
 	  background-image: url("https://e-cdns-files.dzcdn.net/cache/slash/images/common/logos/deezer_white.d183117d35d9c9e3717604422ac09c95.png");
@@ -49,35 +55,6 @@
   
   /* Topbar */
   
-  .page-topbar {
-    background-color: var(--bg-color);
-    border-color: var(--border-color);
-  }
-  
-  .page-topbar .topbar-search-input, .page-topbar .topbar-search-input::placeholder, .page-topbar .topbar-search-submit {
-    color: var(--text-color);
-  }
-  
-  .page-topbar .topbar-search-input {
-    background-color: var(--depth-color);
-    border-color: var(--depth-color);
-  }
-  
-  .page-topbar .topbar-search-input:hover, .page-topbar .topbar-search-input:focus {
-    background-color: var(--bg-color);
-    box-shadow: 0 1px 12px 0 rgba(0, 0, 0, .4);
-  }
-  
-  .page-topbar .topbar-search-input:hover {
-
-    border-color: var(--border-color);
-  }
-  
-  .page-topbar .topbar-search-input:focus {
-    border-color: #007feb;
-  }
-  
-  
   .page-topbar .topbar-search-clear {
     color: var(--secondary-color);
   }
@@ -86,7 +63,6 @@
   
   .page-player .player-bottom {
     background-color: var(--bg-color);
-    border-color: var(--border-color);
     color: var(--text-color);
   }
   
@@ -186,27 +162,12 @@
   
   /* Headings and Sub-Headings */
   
-  [class^="heading-"], [class^="heading-"] a, [class^="heading-"] a:hover, .catalog-header .header-info .heading-link, .header-title {
+  .catalog-header .header-info .heading-link, .header-title, .thumbnail-grid-title {
     color: var(--text-color) !important;
   }
   
   .heading-1-sub, .heading-2-sub, .heading-3-sub, .heading-4-sub, .heading-5-sub {
     color: var(--secondary-color);
-  }
-  
-  /* Navbars */
-  
-  .navbar {
-    background-color: var(--bg-color);
-    border-color: var(--border-color);
-  }
-  
-  .navbar-item {
-    color: var(--secondary-color);
-  }
-  
-  .navbar-link:hover, .navbar-item.active .navbar-link {
-    color: var(--text-color);
   }
   
   /* Poppers */
@@ -354,10 +315,6 @@
     color: var(--text-color);
   }
   
-  .slide {
-    border-color: var(--border-color);
-  }
-  
   .slide .slide-background {
     background-color: var(--bg-color) !important;
   }
@@ -424,9 +381,15 @@
     color: var(--heading-color);
   }
   
-  /* Search results */
+  /* Artist pages */
   
-  .page-naboo-search .suggest-column .nano-card-item, .page-naboo-search .suggest-column .nano-card-item:hover {
+  #page_naboo_artist {
+    --content-box-background-color: var(--bg-color);
+  }
+  
+  /* Search results (looks like we don't need those anymore) */
+  
+  /* .page-naboo-search .suggest-column .nano-card-item, .page-naboo-search .suggest-column .nano-card-item:hover {
     background-color: var(--bg-color);
   }
   
@@ -436,6 +399,6 @@
   
   .page-naboo-search .suggest-column .nano-card-item:hover {
     box-shadow: 0 3px 7px var(--shadow-color);
-  }
+  } */
   
 }
