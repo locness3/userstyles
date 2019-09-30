@@ -30,13 +30,6 @@
     --secondary-text-color: var(--secondary-color)
   }
   
-  /* Global */
-  
-  body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-  }
-  
   /* Sidebar */
   
   .logo-deezer-black {
