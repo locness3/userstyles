@@ -20,11 +20,15 @@
     
     --main-background-color: var(--bg-color);
     --default-background-color: var(--bg-color);
+    --default-hover-color: var(--border-color);
     --sidebar-background-color: var(--bg-color);
+    --player-background-color: var(--bg-color);
     --default-border-color: var(--border-color);
     --main-border-color: var(--border-color);
     --sidebar-border-color: var(--border-color);
     --slide-border-color: var(--border-color);
+    --datagrid-border-color: var(--border-color);
+    --slider-track-default-color: var(--border-color);
     --default-text-color: var(--text-color);
     --main-text-color: var(--text-color);
     --secondary-text-color: var(--secondary-color)
@@ -42,87 +46,27 @@
     background-color: var(--depth-color);
   }
   
-  .page-sidebar .sidebar-nav-link {
-    color: var(--text-color);
-  }
-  
   /* Topbar */
   
   .page-topbar .topbar-search-clear {
-    color: var(--secondary-color);
+    color: var(--text-color);
+    background-color: transparent;
+  }
+  
+  .topbar-search-clear:hover {
+    background-color: var(--border-color) !important;
   }
   
   /* Player */
   
-  .page-player .player-bottom {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-  }
-  
-  .page-player .popper-player-preview .preview-heading, .page-player .popper-player-preview .preview-link {
-    color: var(--text-color);
-  }
-  
-  .page-player .player-track .track-heading {
-    color: var(--text-color);
-  }
-  
-  .slider-track-default {
-    background-color: var(--border-color);
-  }
-  
-  .slider-track-active {
-    background-color: var(--text-color);
-  }
-  
-  .page-player .player-options .option-item + .option-item::before {
-    background-color: var(--border-color);
-  }
-  
-  .page-player .player-options .queuelist.is-available:hover {
-    background-color: var(--border-color);
-  }
-  
-  .page-player .player-options .queuelist.is-active {
-    background-color: var(--depth-color);
-  }
-  
-  .page-player .player-options .queuelist-label {
-    color: var(--text-color);
-  }
-  
-  .page-player .popper-player-settings .setting-label {
-    color: var(--text-color);
-  }
-  
-  .page-player .popper-player-settings .setting-info {
+  .page-player .popper-player-settings .setting-info, .page-player .popper-player-settings .setting-notice {
     color: var(--secondary-color);
   }
   
   /* Player windows (lyrics, queue...) */
   
-  .page-player .player-full {
-    background-color: var(--bg-color);
-  }
-  
-  .page-player .player-full .player-heading {
-    color: var(--text-color);
-  }
-  
-  .page-player .queuelist-cover-title {
-    color: var(--text-color);
-  }
-  
   .page-player .queuelist-cover-subtitle {
     color: var(--secondary-color);
-  }
-  
-  .page-player .queuelist-header {
-    border-color: var(--border-color);
-  }
-  
-  .page-player .queuelist-title {
-    color: var(--text-color);
   }
   
   .page-player .lyrics-spinner {
@@ -280,14 +224,6 @@
   
   .btn-view-more .label, .btn-view-more::after {
     color: var(--secondary-color);
-  }
-  
-  .svg-icon-group-btn {
-    color: var(--text-color);
-  }
-  
-  .svg-icon-group-btn:hover, .svg-icon-group-btn.is-active {
-    background-color: var(--border-color);
   }
   
   .thumbnail .action-item-btn {
