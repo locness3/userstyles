@@ -20,17 +20,25 @@
     
     --main-background-color: var(--bg-color);
     --default-background-color: var(--bg-color);
-    --default-hover-color: var(--border-color);
     --sidebar-background-color: var(--bg-color);
     --player-background-color: var(--bg-color);
+    --lyrics-gradient-color: var(--bg-color);
+    
+    --default-hover-color: var(--border-color);
+    --main-hover-color: var(--border-color);
+    
     --default-border-color: var(--border-color);
     --main-border-color: var(--border-color);
     --sidebar-border-color: var(--border-color);
     --slide-border-color: var(--border-color);
     --datagrid-border-color: var(--border-color);
     --slider-track-default-color: var(--border-color);
+    
     --default-text-color: var(--text-color);
     --main-text-color: var(--text-color);
+    --lyrics-active-color: var(--text-color);
+    
+    --lyrics-color: var(--secondary-color);
     --secondary-text-color: var(--secondary-color)
   }
   
@@ -40,10 +48,6 @@
 	  background-image: url("https://e-cdns-files.dzcdn.net/cache/slash/images/common/logos/deezer_white.d183117d35d9c9e3717604422ac09c95.png");
 	  height: 24px;
 	  width: 117px;
-  }
-  
-  .page-sidebar .sidebar-nav-link:hover {
-    background-color: var(--depth-color);
   }
   
   /* Topbar */
@@ -69,28 +73,12 @@
     color: var(--secondary-color);
   }
   
-  .page-player .lyrics-spinner {
-    color: var(--text-color);
-  }
-  
-  .page-player .lyrics-line {
-    color: var(--secondary-color);
-  }
-  
-  .page-player .lyrics-synchro .lyrics-line:hover, .page-player .lyrics-line.is-oneline:hover {
-    background-color: var(--border-color);
-  }
-  
-  .page-player .lyrics-line.is-active {
-    color: var(--text-color);
-  }
-  
   .page-player .lyrics-line.is-oneline {
     color: var(--text-color);
   }
   
   .page-player .lyrics-gradient.is-top {
-    background-image: linear-gradient(0deg,hsla(0,0%,100%,0),#212431) !important;
+    background-image: linear-gradient(0deg,hsla(0, 0%, 100%, 0),#212431) !important;
   }
   
   .page-player .lyrics-gradient.is-bottom {
