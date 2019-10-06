@@ -34,10 +34,10 @@
     --datagrid-border-color: var(--border-color);
     --slider-track-default-color: var(--border-color);
     
-    --default-text-color: var(--text-color);
     --main-text-color: var(--text-color);
     --lyrics-active-color: var(--text-color);
     
+    --default-text-color: var(--secondary-color);
     --lyrics-color: var(--secondary-color);
     --secondary-text-color: var(--secondary-color)
   }
@@ -69,10 +69,6 @@
   
   /* Player windows (lyrics, queue...) */
   
-  .page-player .queuelist-cover-subtitle {
-    color: var(--secondary-color);
-  }
-  
   .page-player .lyrics-line.is-oneline {
     color: var(--text-color);
   }
@@ -87,7 +83,7 @@
   
   /* Headings and Sub-Headings */
   
-  .catalog-header .header-info .heading-link, .header-title, .thumbnail-grid-title {
+  .thumbnail-grid-title {
     color: var(--text-color) !important;
   }
   
