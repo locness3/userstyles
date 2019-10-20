@@ -29,6 +29,7 @@
     
     --default-border-color: var(--border-color);
     --main-border-color: var(--border-color);
+    --secondary-border-color: var(--border-color);
     --sidebar-border-color: var(--border-color);
     --slide-border-color: var(--border-color);
     --datagrid-border-color: var(--border-color);
@@ -87,23 +88,10 @@
     color: var(--text-color) !important;
   }
   
-  .heading-1-sub, .heading-2-sub, .heading-3-sub, .heading-4-sub, .heading-5-sub {
-    color: var(--secondary-color);
-  }
-  
   /* Poppers */
   
   .popper-content {
-    background-color: var(--bg-color);
     color: var(--text-color);
-  }
-  
-  .page-topbar .popper-search .search-heading, .page-topbar .popper-search .search-history-link {
-    color: var(--text-color);
-  }
-  
-  .page-topbar .popper-search .search-history-link:hover {
-    background-color: var(--depth-color);
   }
   
   .page-topbar .popper-search .nano-card-item {
@@ -114,42 +102,16 @@
     background-color: var(--depth-color);
   }
   
-  .page-topbar .popper-account .account-link {
-    color: var(--secondary-color);
-  }
-  
-  .page-topbar .popper-account .account-link.is-main, .page-topbar .popper-account .account-heading {
-    color: var(--text-color) !important;
-  }
-  
   .page-topbar .popper-account .account-menu, .page-topbar .popper-account .account-item.is-divider {
     border-color: var(--border-color);
   }
   
-  .popover {
-    background-color: var(--bg-color);
-    border-color: var(--border-color)
-  }
-  
-  .popover .popover-header {
-    border-color: var(--border-color);
-  }
-  
   .page-contextmenu .menu-item, .page-contextmenu .menu-item:hover {
-    background-color: var(--bg-color);
     color: var(--secondary-color);
-  }
-  
-  .page-contextmenu .menu-item:hover {
-    background-color: var(--border-color);
   }
   
   .page-contextmenu .menu-item:hover > .icon {
     color: var(--secondary-color);
-  }
-  
-  .page-contextmenu .menu-item.link {
-    background-color: var(--border-color);
   }
   
   .page-contextmenu .menu-item.link:hover {
@@ -157,16 +119,6 @@
   }
   
   /* Buttons */
-  
-  .carousel-control {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    border-color: var(--border-color);
-  }
-  
-  .carousel-control:hover:not(.disabled) {
-    background-color: var(--bg-color);
-  }
   
   .create-assistant-container:hover {
     background-color: var(--depth-color);
