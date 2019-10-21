@@ -102,10 +102,6 @@
     background-color: var(--depth-color);
   }
   
-  .page-topbar .popper-account .account-menu, .page-topbar .popper-account .account-item.is-divider {
-    border-color: var(--border-color);
-  }
-  
   .page-contextmenu .menu-item, .page-contextmenu .menu-item:hover {
     color: var(--secondary-color);
   }
@@ -137,11 +133,6 @@
   
   .c0110:not(.c0124):active {
     background-color: var(--depth-color);
-  }
-  
-  .slide:not(.is-bg-full-img) .slide-btn {
-    border-color: var(--text-color);
-    color: var(--text-color);
   }
   
   .slide:not(.is-bg-full-img) .slide-btn:hover {
