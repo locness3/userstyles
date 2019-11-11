@@ -11,6 +11,9 @@
   /* Variables */
   
   :root {
+    
+    /* Style colors */
+    
     --bg-color: #212431;
     --border-color: #3a3e4f;
     --depth-color: #191b25;
@@ -18,14 +21,23 @@
     --text-color: #eee;
     --secondary-color: #ffffffbf;
     
+    /* Below variables are Deezer's internal variables, which we overrride with the style colors defined above */
+    
+    /* Backgrounds */
+    
     --main-background-color: var(--bg-color);
     --default-background-color: var(--bg-color);
     --sidebar-background-color: var(--bg-color);
     --player-background-color: var(--bg-color);
     --lyrics-gradient-color: var(--bg-color);
     
+    /* Hover colors */
+    
     --default-hover-color: var(--border-color);
     --main-hover-color: var(--border-color);
+    --datagrid-row-hover-color: var(--border-color);
+    
+    /* Border colors */
     
     --default-border-color: var(--border-color);
     --main-border-color: var(--border-color);
@@ -35,8 +47,12 @@
     --datagrid-border-color: var(--border-color);
     --slider-track-default-color: var(--border-color);
     
+    /* Main text colors */
+    
     --main-text-color: var(--text-color);
     --lyrics-active-color: var(--text-color);
+    
+    /* Defualt and secondary text colors */
     
     --default-text-color: var(--secondary-color);
     --lyrics-color: var(--secondary-color);
@@ -102,6 +118,10 @@
     background-color: var(--depth-color);
   }
   
+  .page-topbar .popper-account .account-menu, .page-topbar .popper-account .account-item.is-divider {
+    border-color: var(--border-color);
+  }
+  
   .page-contextmenu .menu-item, .page-contextmenu .menu-item:hover {
     color: var(--secondary-color);
   }
@@ -135,12 +155,6 @@
     background-color: var(--depth-color);
   }
   
-  .slide:not(.is-bg-full-img) .slide-btn:hover {
-    background-color: var(--text-color);
-    color: #32323d;
-    border-color: var(--text-color);
-  }
-  
   .btn-view-more {
     background-color: var(--border-color);
   }
@@ -171,76 +185,19 @@
     color: var(--text-color);
   }
   
-  .slide .slide-background {
-    background-color: var(--bg-color) !important;
-  }
-  
-  .flow-logo-svg path {
-    fill: var(--secondary-color);
-  }
-  
   .slide.slide-cut .slide-covers::after {
     background-color: var(--bg-color);
     border-color: var(--border-color);
   }
   
-  .slide:not(.is-bg-full-img) .slide-text .subtitle, .slide:not(.is-bg-full-img) .slide-text .subtitle .link {
-    color: var(--secondary-color);
-  }
-  
-  /* Track listings */
-  
-  .datagrid {
-    background-color: var(--bg-color);
-  }
-  
-  .datagrid-header .datagrid-row {
-    background-color: var(--bg-color);
-  }
-  
-  .datagrid-label-main {
-    color: var(--text-color);
-  }
-  
-  .datagrid-header .datagrid-row::after, .datagrid-header .datagrid-row::before, .datagrid-row::after, .datagrid-row::before {
-    background-color: var(--border-color);
-  }
-  
-  .datagrid-row.has-contextmenu, .datagrid-row:hover {
-    background-color: var(--border-color);
-  }
-  
   /* Profile */
   
-  #page_profile {
-    background-color: var(--bg-color);
-  }
-  
   #page_profile .profile-header-container {
-    border-color: transparent;
-    border-bottom-color: var(--border-color);
-  }
-  
-  #page_profile .profile-header-container .navbar {
-    border-bottom-color: transparent;
-  }
-  
-  #page_profile .profile-header .header-main .header-subtitle .subtitle-elem {
-    color: var(--secondary-color);
-  }
-  
-  #page_profile .profile-header .header-main .header-subtitle .subtitle-elem .subtitle-elem-number {
-    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
   }
   
   #page_profile .placeholders-container .placeholders-title {
     color: var(--heading-color);
-  }
-  
-  /* Artist pages */
-  
-  #page_naboo_artist {
-    --content-box-background-color: var(--bg-color);
   }
   
   /* Search results (looks like we don't need those anymore) */
