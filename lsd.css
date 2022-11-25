@@ -1,0 +1,13 @@
+@keyframes lsd {
+  0%, 100% {
+    filter: hue-rotate(0deg);
+  }
+  
+  50% {
+    filter: hue-rotate(180deg);
+  }
+}
+
+body {
+  animation: lsd 1s infinite;
+}
